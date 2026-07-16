@@ -15,6 +15,8 @@ This project aims to develop a CNN-based model capable of accurately detecting m
 - [Model Summary](#model-summary)
 - [Model Evaluation](#model-evaluation)
 - [Technologies Used](#technologies-used)
+- [Setup & Running](#setup--running)
+- [Project Structure](#project-structure)
 - [Acknowledgements](#acknowledgements)
 - [Collaborators](#collaborators)
 
@@ -72,7 +74,31 @@ A step-by-step breakdown of the final CNN architecture:
 - [Pandas](https://pandas.pydata.org/) - version 1.5.3
 - [Seaborn](https://seaborn.pydata.org/) - version 0.12.2
 - [TensorFlow](https://www.tensorflow.org/) - version 2.15.0
+- [Augmentor](https://augmentor.readthedocs.io/en/master/) - dataset augmentation to correct class imbalance
 
+## Setup & Running
+
+Install dependencies:
+
+```bash
+pip install tensorflow==2.15.0 numpy==1.24.3 pandas==1.5.3 matplotlib==3.7.1 seaborn==0.12.2 Augmentor
+```
+
+Launch the notebook:
+
+```bash
+jupyter notebook shrey_jain_nn.ipynb
+```
+
+The notebook expects the ISIC skin-lesion image dataset (train/test folders of malignant/benign classes) to be available locally; update the dataset path at the top of the notebook to point at your local copy before running all cells.
+
+## Project Structure
+
+```
+shrey_jain_nn.ipynb              Main CNN notebook (data prep, model, training, evaluation)
+shrey_jain_cnn_assignmet.txt     Link back to this repo
+static/images/                   Charts referenced in this README (class distribution, model summary/evaluation, skin cancer types)
+```
 
 ## Acknowledgements
 
